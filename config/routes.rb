@@ -1,4 +1,6 @@
 Blog::Application.routes.draw do
+  resources :pictures
+
   get "/" => 'home#index'
 
   get "/posts/new" => 'posts#new'
